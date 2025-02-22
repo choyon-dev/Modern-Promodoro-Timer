@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Author: Fajle Rabbi Choyon
+   GitHub: https://github.com/choyon-dev
+   Website: https://choyon.pro
+   Email: hello@choyon.pro
+   Description: This CSS file is part of my public projects, showcasing 
+                my skills in web design and development. Feel free to use 
+                and modify the code with proper attribution.
+   ========================================================================== */
+
+
+
+:root {
+    --primary: #FF6B6B;
+    --secondary: #4ECDC4;
+    --bg: #1E1E1E;
+    --text: #FFFFFF;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] {
+    --bg: #F5F5F5;
+    --text: #2D3436;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.theme-controls button {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.progress-ring {
+    position: relative;
+    margin: 0 auto 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.progress-circle {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke 0.3s;
+}
+
+.time-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.mode-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.mode-tabs button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background: var(--glass-bg);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.mode-tabs button.active {
+    background: var(--primary);
+    color: white;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.controls button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.neumorphic {
+    background: var(--glass-bg);
+    color: var(--text);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+               -5px -5px 10px rgba(255, 255, 255, 0.05);
+}
+
+.stats {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.session-counter {
+    margin-bottom: 10px;
+}
+
+.completion-bar {
+    height: 4px;
+    background: var(--glass-bg);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.completion-bar::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: var(--primary);
+    transition: width 0.3s;
+}
+
+.notification {
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    transition: bottom 0.3s;
+}
+
+@media (max-width: 480px) {
+    .progress-ring {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .time-display {
+        font-size: 2.8rem;
+    }
+}

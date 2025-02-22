@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer - Stay Focused, Work Smarter</title>
+    <link rel="icon" href="assets/Pomodoro Timer Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="glass-card">
+            <h1>Pomodoro Timer</h1>
+            <div class="theme-controls">
+                <button id="theme-toggle">🌙</button>
+                <button id="sound-toggle">🔊</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="timer-card glass-card">
+                <div class="progress-ring">
+                    <svg width="300" height="300">
+                        <circle class="progress-circle" cx="150" cy="150" r="140"/>
+                    </svg>
+                    <div class="time-display" id="timer">25:00</div>
+                </div>
+                
+                <div class="mode-tabs">
+                    <button class="active" data-mode="work">Work</button>
+                    <button data-mode="short-break">Short Break</button>
+                    <button data-mode="long-break">Long Break</button>
+                </div>
+
+                <div class="controls">
+                    <button id="start" class="neumorphic">▶ Start</button>
+                    <button id="reset" class="neumorphic">🔄 Reset</button>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="session-counter">
+                    <span class="tomato">🍅</span> <span id="count">0</span>/4
+                </div>
+                <div class="completion-bar"></div>
+            </div>
+        </main>
+
+        <div class="notification" id="notification"></div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
