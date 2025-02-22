@@ -1,5 +1,3 @@
-Here’s your `README.md` formatted in the style you requested:  
-
 ```markdown
 # 🍅 Pomodoro Timer  
 A modern, responsive **Pomodoro Timer** web application designed to help you stay focused, boost productivity, and efficiently manage your work sessions.  
@@ -36,7 +34,7 @@ A modern, responsive **Pomodoro Timer** web application designed to help you sta
 
 ## 🔗 Live Demo  
 
-👉 **Try the live demo:** [Pomodoro Timer](https://your-live-demo-url.com)  
+👉 **Try the live demo:** [Pomodoro Timer](https://choyon-dev.github.io/Modern-Promodoro-Timer/)  
 
 ---
 
