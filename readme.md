@@ -1,4 +1,3 @@
-```markdown
 # 🍅 Pomodoro Timer  
 A modern, responsive **Pomodoro Timer** web application designed to help you stay focused, boost productivity, and efficiently manage your work sessions.  
 
@@ -94,5 +93,4 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 If you found this project helpful, please consider giving it a ⭐️ on GitHub!  
 
-🚀 *Stay productive, stay focused!*  
-```
+🚀 *Stay productive, stay focused!* 
